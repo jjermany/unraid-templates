@@ -1,0 +1,25 @@
+<?xml version="1.0" ?>
+<Container>
+  <Name>Plex Notifier</Name>
+  <Repository>jjermany/plex-notifier</Repository>
+  <Registry>https://hub.docker.com/r/jjermany/plex-notifier</Registry>
+  <Network>host</Network>
+  <Privileged>false</Privileged>
+  <Support>https://github.com/jjermany/plex-notifier</Support>
+  <Project>https://github.com/jjermany/plex-notifier</Project>
+  <Overview>Plex Notifier periodically checks for new Plex episodes and sends user-specific email alerts based on their watch history, powered by Tautulli. Set your Plex, Tautulli, and SMTP info in the web UI.</Overview>
+  <Category>MediaServer:Notification:Email</Category>
+  <Icon>https://raw.githubusercontent.com/jjermany/plex-notifier/main/media/logo.png</Icon>
+  <Config>
+    <Name>config</Name>
+    <Target>/app/instance</Target>
+    <Default>/mnt/cache/appdata/plex-notifier</Default>
+    <Mode>rw</Mode>
+    <Description>Stores user config and internal database</Description>
+  </Config>
+  <Environment>
+    <Name>TZ</Name>
+    <Default></Default>
+    <Description>Container timezone</Description>
+  </Environment>
+</Container>
