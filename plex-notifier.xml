@@ -10,6 +10,7 @@
   <Overview>Plex Notifier periodically checks for new Plex episodes and sends user-specific email alerts based on their watch history, powered by Tautulli. Set your Plex, Tautulli, and SMTP info in the web UI.</Overview>
   <Category>MediaServer:Notification:Email</Category>
   <Icon>https://raw.githubusercontent.com/jjermany/plex-notifier/main/media/logo.png</Icon>
+  <WebUI>http://[IP]:[PORT:5000]</WebUI>
   <Config>
     <Name>config</Name>
     <Target>/app/instance</Target>
